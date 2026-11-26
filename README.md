@@ -30,6 +30,12 @@ The deployed environment brings together the main functional entities of an IMS 
 **Kamailio version:** 6.1.5  
 **Deployment approach:** Native installation, without Docker.
 
+### IMS Core Architecture
+
+The following diagram illustrates the architecture of the deployed IMS environment.
+
+![IMS Core Network Architecture](documentation/images/ims_core_network.jpeg)
+
 ## 2. How the Components Work Together
 
 The implementation focuses on the interaction between the IMS control functions and the subscriber database.
@@ -65,6 +71,18 @@ The main implementation activities included:
 
 An important part of this work was troubleshooting configuration and integration problems rather than simply installing the software.
 
+### Network Listening Ports
+
+The following screenshot shows the listening ports of the IMS components.
+
+![IMS Listening Ports](documentation/images/ims_listening_ports.jpeg)
+
+### IMS Services Status
+
+The following screenshot presents the status of the IMS services.
+
+![IMS Services Status](documentation/images/ims_services_status.jpeg)
+
 ## 4. Functional Testing
 
 To verify the implementation, I used two test subscribers:
@@ -74,7 +92,11 @@ To verify the implementation, I used two test subscribers:
 
 The call testing procedure was designed to observe the SIP signaling exchanged during call establishment.
 
-### Observed SIP signaling
+### Bob Preparing for the Call
+
+![Bob Is Getting Ready for the Call](documentation/images/bob_is_getting_ready_for_the_call.jpeg)
+
+### Observed SIP Signaling
 
 During a successful signaling test, the following responses were observed:
 
@@ -86,7 +108,13 @@ During a successful signaling test, the following responses were observed:
 
 The call dialog information, including Contact and Record-Route, was also inspected.
 
-### Current implementation status
+### SIP Call Test
+
+The following screenshot illustrates the SIP communication test between Alice and Bob.
+
+![Alice Bob Call Test](documentation/images/the_call.jpeg)
+
+### Current Implementation Status
 
 | Component or functionality | Result |
 |---|---|
@@ -123,6 +151,12 @@ IMS-Core-Network/
 ├── scripts/
 ├── tests/
 └── documentation/
+    └── images/
+        ├── ims_core_network.jpeg
+        ├── ims_listening_ports.jpeg
+        ├── ims_services_status.jpeg
+        ├── bob_is_getting_ready_for_the_call.jpeg
+        └── the_call.jpeg
 ```
 
 The files will include sanitized configurations, useful installation commands, verification procedures, test scripts and implementation notes.
