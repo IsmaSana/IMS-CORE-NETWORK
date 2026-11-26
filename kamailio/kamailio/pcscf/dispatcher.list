@@ -1,0 +1,3 @@
+# SBC's
+# Replace 192.0.2.10 with the IP address of your SBC.
+2 sip:192.0.2.10:5070
