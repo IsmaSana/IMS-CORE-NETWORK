@@ -16,8 +16,7 @@
 >
 	<Peer FQDN="pcrf.epc.mnc001.mcc001.3gppnetwork.org" Realm="epc.mnc001.mcc001.3gppnetwork.org" port="3868"/> 
 
-	<!-- Replace with the IP address of your IMS server -->
-	<Acceptor port="3871" bind="192.0.2.10"/>
+	<Acceptor port="3871" bind="10.0.2.15"/>
 
 	<Auth id="16777236" vendor="10415"/> <!-- 3GPP Rx -->
 	<Auth id="16777236" vendor="0"/> <!-- 3GPP Rx -->

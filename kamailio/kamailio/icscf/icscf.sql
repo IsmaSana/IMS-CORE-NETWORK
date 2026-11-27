@@ -1,4 +1,3 @@
-imsadmin@Ubuntu-IMS:~$ sudo cat /etc/kamailio_icscf/icscf.sql
 -- phpMyAdmin SQL Dump
 -- version 4.4.13.1
 -- http://www.phpmyadmin.net
@@ -93,4 +92,3 @@ ALTER TABLE `s_cscf`
 --
 ALTER TABLE `s_cscf_capabilities`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-imsadmin@Ubuntu-IMS:~$
